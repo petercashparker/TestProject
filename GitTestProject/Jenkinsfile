@@ -1,5 +1,7 @@
 node {
   stage ('SCM Checkout' ) {
+    tool 'tool name: '', type: 'maven'
+    
     git 'https://github.com/petercashparker/TestProject'
   }
   stage ('Compile-Package'){
